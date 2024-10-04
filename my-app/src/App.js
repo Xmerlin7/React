@@ -21,5 +21,7 @@ function App() {
     </div>
   );
 }
+function MyReact(){
 
+}
 export default App;
