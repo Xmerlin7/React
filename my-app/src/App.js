@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <MyReact />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -15,13 +16,15 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Seif Merlin
         </a>
       </header>
     </div>
   );
 }
-function MyReact(){
-
+function MyReact() {
+  return(
+    <h2>Hi</h2>
+  )
 }
 export default App;
