@@ -1,0 +1,18 @@
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-color: teal; /* Keep only this */
+    border-style: solid;  /* Add border style */
+    border-width: 2px;
+    padding: 7px;
+    width: 30%;
+}
+.sidebar :hover {
+    background-color: rgb(97, 1, 97)
+}
+.tagButton {
+    background-color: purple;
+    margin: 5px;
+}

@@ -1,24 +1,24 @@
 import './App.css';
 import { Header } from './header';
 import Post from './posts';
-import TagButton from './tagButton'
+import SideBar from './sideBar'
+import './posts.css'
 function App() {
   return (
     <div className="App">
       <Header />
       {/* Big container */}
-      <div style={{marginTop: "120px"}}>
+      <div style={{ marginTop: "120px" }}>
         {/* container that has two divs */}
-        <div style={{display: "flex", justifyContent: "center"}}>
+        <div style={{ display: "flex", justifyContent: "center",gap: "50px", alignItems: "flex-start" }}>
           {/* posts div */}
-          <div>
+          <div className="posts">
             <Post />
             <Post />
           </div>
           {/* menu sidebar div */}
           <div>
-          
-          
+            <SideBar />
           </div>
         </div>
       </div>
