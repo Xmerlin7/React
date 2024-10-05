@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Header } from './header';
+import Post from './posts';
+import TagButton from './tagButton'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {/* Big container */}
+      <div style={{marginTop: "120px"}}>
+        {/* container that has two divs */}
+        <div style={{display: "flex", justifyContent: "center"}}>
+          {/* posts div */}
+          <div>
+            <Post />
+            <Post />
+          </div>
+          {/* menu sidebar div */}
+          <div>
+          
+          
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
