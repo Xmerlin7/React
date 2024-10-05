@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import MyReact from './main';
 function App() {
   return (
     <div className="App">
@@ -16,16 +16,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          
+
           Seif Merlin
         </a>
       </header>
     </div>
   );
 }
-function MyReact() {
-  return(
-    <h2>Hi</h2>
-  )
-}
+
 export default App;
