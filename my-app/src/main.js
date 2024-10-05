@@ -12,8 +12,9 @@ export default function MyReact(){
         </div>
     )
 }
-const elmstlye = {
-    backgroundColor: "lightBlue"
+export const elmstlye = {
+    backgroundColor: "lightBlue",
+    boxShadow: "0px 20px 10px black"
 }   
 export function sayAlert(){
     alert('Hi, Merlion')
