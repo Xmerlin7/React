@@ -2,7 +2,7 @@ import './App.css';
 import { Header } from './header';
 import Post from './posts';
 import SideBar from './sideBar'
-import './posts.css'
+
 function App() {
   return (
     <div className="App">
@@ -12,7 +12,7 @@ function App() {
         {/* container that has two divs */}
         <div style={{ display: "flex",gap: "50px", alignItems: "flex-start" }}>
           {/* posts div */}
-          <div className="posts" style={{width: "60%"}}>
+          <div  style={{width: "60%"}}>
             <Post />
             <Post />
           </div>

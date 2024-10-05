@@ -1,7 +1,7 @@
-
+import './posts.css'
 export default function Post() {
     return (
-        <div >
+        <div className="posts">
             <h2>
                 This is the post title
             </h2>
