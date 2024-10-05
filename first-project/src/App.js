@@ -8,16 +8,16 @@ function App() {
     <div className="App">
       <Header />
       {/* Big container */}
-      <div style={{ marginTop: "120px" }}>
+      <div style={ {display: "flex", justifyContent:'center', alignItems: 'center' ,marginTop: "120px" }}>
         {/* container that has two divs */}
-        <div style={{ display: "flex", justifyContent: "center",gap: "50px", alignItems: "flex-start" }}>
+        <div style={{ display: "flex",gap: "50px", alignItems: "flex-start" }}>
           {/* posts div */}
-          <div className="posts">
+          <div className="posts" style={{width: "60%"}}>
             <Post />
             <Post />
           </div>
           {/* menu sidebar div */}
-          <div>
+          <div style={{width: "40%"}}>
             <SideBar />
           </div>
         </div>
