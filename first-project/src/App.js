@@ -13,7 +13,7 @@ function App() {
         {/* container that has two divs */}
         <div style={{ display: "flex", gap: "50px", alignItems: "flex-start" }}>
           {/* posts div */}
-          <div style={{ width: "60%" }}>
+          <div style={{flexShrink: "0", minWidth: "60%" }}>
             <Post name="Merlin" />
             <Post name="Adam">
               <h3 style={{ color: namee === "Adam" ? "green" : "red" }}>Hi Hi captain</h3>
