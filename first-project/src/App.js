@@ -4,23 +4,7 @@ import Post from "./posts";
 import SideBar from "./sideBar";
 
 function App() {
-  const posts = [
-    {
-      key: 1,
-      name: "seif",
-    },
-    {
-      key: 2,
-      name: "Adam",
-    },
-    {
-      key: 3,
-      name: "Merlin",
-    },
-  ];
-  const postLists = posts.map((post) => {
-    return <Post key={post.key} name={post.name} />;
-  });
+
 
   return (
     <div className="App">
@@ -38,7 +22,7 @@ function App() {
         <div style={{ display: "flex", gap: "50px", alignItems: "flex-start" }}>
           {/* posts div */}
           <div style={{ flexShrink: "0", minWidth: "60%" }}>
-            {postLists}
+            <Post />
             {/* <h3 style={{ color: namee === "Adam" ? "green" : "red" }}>Hi Hi captain</h3> */}
           </div>
           {/* menu sidebar div */}
