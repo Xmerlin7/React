@@ -2,9 +2,9 @@ import './sideBar.css'
 import TagButton from './tagButton'
 export default function SideBar() {
     const img = {
-        width : "20px",
+        width: "20px",
         margin: "8px",
-       
+
 
     }
 
@@ -12,13 +12,13 @@ export default function SideBar() {
         <div className='sidebar'>
             <TagButton />
             <TagButton >
-                *
+                😊
             </TagButton>
             <TagButton >
-                <img style={img} 
-                src='logo192.png' alt='hi'></img>
+                <img style={img}
+                    src='logo192.png' alt='hi'></img>
             </TagButton>
-        
+
         </div>
     )
 }

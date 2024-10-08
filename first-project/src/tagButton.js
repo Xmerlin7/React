@@ -4,8 +4,13 @@ export default function TagButton({ children }) {
         <>
             
             <button className="tagButton">
-                Click me
+                <div>
+                    Click me
+                </div>
+                <div>
+
                 {children}
+                </div>
                 </button>
         </>
     )
