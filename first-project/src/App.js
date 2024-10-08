@@ -4,8 +4,6 @@ import Post from "./posts";
 import SideBar from "./sideBar";
 
 function App() {
-
-
   return (
     <div className="App">
       <Header />
