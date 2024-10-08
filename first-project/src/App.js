@@ -6,22 +6,22 @@ import SideBar from './sideBar'
 function App() {
   const posts = [
     {
-      id: 1,
+      key: 1,
       name: "seif"
 
     },
     {
-      id: 2,
+      key: 2,
       name: "Adam"
     },
     {
-      id: 3,
+      key: 3,
       name: "Merlin"
     }
   ]
   const postLists = posts.map((post) => {
     return (
-      <Post name={post.name} />
+      <Post key={post.key} name={post.name} />
     )
   })
 
