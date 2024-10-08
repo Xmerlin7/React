@@ -1,17 +1,10 @@
-
-export default function TagButton({ children }) {
-    return (
-        <>
-            
-            <button className="tagButton">
-                <div>
-                    Click me
-                </div>
-                <div>
-
-                {children}
-                </div>
-                </button>
-        </>
-    )
+export default function TagButton({ title, children }) {
+  return (
+    <>
+      <button className="tagButton">
+        <div>{title}</div>
+        <div>{children}</div>
+      </button>
+    </>
+  );
 }
