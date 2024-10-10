@@ -2,12 +2,16 @@ import { useState } from "react";
 export default function MyForm() {
   const [input, setInput] = useState({ name: "", email: "" });
   return (
-    <form>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
       <label style={{ marginRight: "5px" }}>Name:</label>
       <input
         value={input.name}
         onChange={(e) => {
-          setInput({ name: e.target.value });
+          setInput({ ...input, name: e.target.value });
         }}
         type="text"
         placeholder="username"
@@ -17,7 +21,7 @@ export default function MyForm() {
       <input
         value={input.email}
         onChange={(e) => {
-          setInput({ email: e.target.value });
+          setInput({ ...input, email: e.target.value });
         }}
         type="text"
         placeholder="email"
