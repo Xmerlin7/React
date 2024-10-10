@@ -1,5 +1,6 @@
 import "./App.css";
 import { Header } from "./header";
+import MyForm from "./myForm";
 import Post from "./posts";
 import SideBar from "./sideBar";
 
@@ -7,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <MyForm />
       {/* Big container */}
       <div
         style={{
